@@ -11,15 +11,15 @@ st.title('Classifying Song Lyrics as a Genre')
 
 # Load in previously trained classification model
 # Load from file
-pkl_model = "C:/LFM-1b_Copy/log_model_lyrics.pkl"
+pkl_model = "log_model_lyrics.pkl"
 with open(pkl_model, 'rb') as file:
     LogModel = pickle.load(file)
 
-pkl_bagofwords = "C:/LFM-1b_Copy/bagofwords_lyrics.pkl"
+pkl_bagofwords = "bagofwords_lyrics.pkl"
 with open(pkl_bagofwords, 'rb') as file:
     bagofwords = pickle.load(file)
 
-pkl_SVD = "C:/LFM-1b_Copy/truncatedSVD_lyrics.pkl"
+pkl_SVD = "truncatedSVD_lyrics.pkl"
 with open(pkl_SVD, 'rb') as file:
     SVD = pickle.load(file)
 
